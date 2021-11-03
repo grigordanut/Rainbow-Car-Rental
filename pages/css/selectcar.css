@@ -1,0 +1,256 @@
+
+/* Adding the Layout Portion first */
+
+body {
+    background-color:#1cfff5;
+    overflow:auto;
+} 
+
+#wrapper   {
+     margin:0 auto;
+     max-width:1400px;
+     width:95%;
+     background:#1cfff5;
+     border:1px solid #d5d5d5;
+     border-radius:12px;
+     box-shadow:5px 10px 10px 5px #888888; 
+}
+
+.header { 
+    height:60px;
+	background-color: #93e1ed;
+    margin: 0 auto;
+    padding: 5px;
+	border-radius:5px;	
+}
+
+.style {
+	border-style:solid;
+	border-color:#eee;
+	border-width:5px; /* Create a border giving a 3D Effect */
+	border-radius:5px;
+	background-color:white; /* gives a 2 pages effect */
+	box-shadow:5px 10px 10px 5px #888888; 
+	padding: 2em 2em 3em 2em;
+	margin:1em auto; /* gives space between pages */
+	margin-top: 0.1em;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+	font-family: georgia;
+    font-size: 28px;
+}
+
+h2 {
+    color: #4682b4;
+    text-align: left;
+	padding-left:15%;
+}
+
+h3 {
+    color: #898989;
+    text-align: center;
+	font-size: 25px;
+}
+
+h4 {
+	font-family: georgia;
+	font-size: 16px;
+    color: #4682b4;
+    text-align: left;
+}
+
+h6 {
+	font-family: georgia;
+	font-size: 16px;
+    color: #4682b4;
+    text-align: center;	
+}
+
+/**p.one {
+    font-family: georgia;
+    font-size: 16px;
+    color: #666;
+    text-align: left;	
+}
+/**/
+
+ul { 
+    text-align: left;
+    color: #A52A2A;
+}
+
+img {
+   text-align:center;
+   max-width:100%;
+   height:auto;
+   width:auto;
+}
+
+/* Adding the Menu Layout */
+
+.toolbar { 
+     float: left; 
+     list-style-type: none;
+     margin-top: 20px;
+     margin-left: 200px;
+}	 
+
+.toolbar li {
+    float: left;
+    background-color:#54BAE2;
+    border:3px solid #FF831C;
+    border-color: #1cfff5 #1cff84 #FF831C; /*-- gives colorfull effect to menu bar */
+	border-bottom: 5px solid #FF831C;
+    padding:0em;		 
+}
+
+.toolbar li a { 
+   float: left; 
+   padding: 1.5em; 
+   color: #fff;
+   font-weight: bold;
+   text-decoration: none; 	
+}
+
+.toolbar li a:hover { 
+	#color: red; 
+}
+
+/* Adding the Footer */
+#footer {
+    background-color:#54BAE2;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+	margin-top:10px;
+	border-radius:5px;	
+}
+/* End of Footer */
+
+.box {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+	float:right;
+	overflow:hidden;
+}
+
+.title {
+    background: #1cff84;
+    padding: 10px 0;
+}
+.meta {
+    text-align: left;
+}
+.content {
+    margin-top: 15px;
+    text-align: justify;
+	
+}
+.bottom {
+    background: #1cfff5;
+    padding: 10px 0;
+    text-align: right;
+}
+
+.bottomfooter {
+    background-color:#54BAE2;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:30px;
+}
+
+/*Media query*/
+@media screen and (max-width:478px){
+body {
+	font-size:13px;
+}
+	
+.box {
+    float:left;
+	width:100%;	
+	margin:0;
+}	
+	
+@media screen and (max-width:740px){
+.toolbar li{
+	width:100%;
+	margin-bottom:10px;
+}
+
+html, body, ul,li{
+    text-align:center;
+    list-style:none;
+    margin:0 auto;
+    padding-left:0;
+    width:100%;
+}
+
+.toolbar li {
+    float: left;
+    background-color:#54BAE2;
+    border:3px solid #FF831C;
+    border-color: #1cfff5 #1cff84 #FF831C;
+	border-bottom: 5px solid #FF831C;
+    padding:0em;
+	width:100%;		 
+}
+
+.toolbar li a { 
+   float: left; 
+   padding: 1.5em; 
+   color: #fff;
+   font-weight: bold;
+   text-decoration: none; 
+   width:100%; 	
+}
+
+div li a { 
+   float: left; 
+   padding: 1.5em; 
+   color: #fff;
+   font-weight: bold;
+   text-decoration: none; 
+   width:100%;    
+}
+
+ul li img{
+   max-width:100%;
+   height:50px;
+   height:auto;
+   width:auto;
+}
+
+.box {
+    float:left;
+	width:100%;	
+	margin:0;
+}
+
+.title {
+    float:left;
+	width:100%;	
+	margin:0;
+}
+
+.meta {
+    text-align: left;
+	width:100%;	
+	margin:0;
+}
+
+.content {
+    margin-top: 15px;
+    text-align: justify;	
+}
+
+.bottom {
+    background: #1cfff5;
+    padding: 10px 0;
+    text-align: right;
+}

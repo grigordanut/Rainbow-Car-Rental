@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contact Us</title>
+	  
+		<link rel="stylesheet" type="text/css" href="css/contactus.css"/> 
+		
+		<script type="text/javascript" >
+		
+			function validate (){
+		
+			var firstnamevalue=document.forms["form1"]["firstname"].value;
+			var surenamevalue=document.forms["form1"]["surename"].value;
+			var phonenumbervalue=document.forms["form1"]["phonenumber"].value;
+			
+			
+				/* Checking the Name field here*/
+				if (firstnamevalue==null ||firstnamevalue== ""){		
+				alert("The First Name filed must be filled out");
+				return false
+				}	
+				/*Checking the Lenght of Name field*/			
+				else if(firstnamevalue.length < 3){			
+				alert("The First Name must have more than 5 Characters");
+				return false
+				}
+										
+				/* Checking the Address Field here*/
+				else if (surenamevalue==null ||surenamevalue== ""){			
+				alert("The Sure Name filed must be filled out");
+				return false
+				}
+				
+				/*Checking the Phone field here*/
+				else if (phonenumbervalue==null ||phonenumbervalue== ""){			
+				alert("The Phone filed must be filled out");
+				return false
+				}
+				
+				else if (isNaN(phonenumbervalue)){
+				alert(phonenumbervalue + " is not a number");
+				return false
+				}
+				
+				else{
+				   alert("Filed has value");
+				
+				}
+			
+			}
+		</script>
+		
+		<!--Adding style menu-->	   
+		<style type="text/css">
+
+			<!-- menu bar attribute -->
+			html, body, ul,  p,  li {
+				margin: 0;
+				padding: 0;
+				border: none ;
+			}
+			.toolbar {
+				float: left; 
+				list-style-type: none;
+				margin-top: 0.1em;
+				margin-left: 0.0em;
+			}			 
+
+			.toolbar li {
+				float: left;
+				background-color:#54BAE2;
+				border:3px solid #FF831C;
+				border-color: #1cfff5 #1cff84 #FF831C; <!-- gives colorfull effect to menu bar -->
+				border-bottom: 5px solid #FF831C;
+				padding:0em;				 
+			}
+
+			.toolbar li a { 
+				float: left; 
+				padding: 1.5em; 
+				color: #fff;
+				font-weight: bold;
+				text-decoration: none; 		
+			}
+
+			.toolbar li a:hover { 
+				color: red; 
+			}
+		</style>
+		
+	</head>
+		
+	<body>
+		<div id="wrapper">
+		   <div id="header">
+			 </div>  
+		
+				<div id="menu">
+					<ul class="toolbar">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="booktaxi.html">Taxi Services</a></li>
+						<li><a href="selectcar.html">Car Rental</a></li>
+						<li><a href="specialevents.html">Special Events</a></li>
+						<li><a href="contactus.html">Contact us</a></li>
+					</ul>
+				</div>
+			
+				<div class="contact">
+					<h1>Contact us</h1>
+				</div>			
+				
+				<form name="form1"  onsubmit="return validate()" method="post">
+			
+					<div id="contactmenu"> 
+						 <div id="firstname">
+							<p>First Name</p>
+						</div>
+				
+						<div id="firstnamebox">			
+							 <input class="fnamebox" name = "firstname" type = "text" size="25" autofocus required />
+						</div>
+				
+						<div id="surename">
+							<p>Sure Name</p>
+						</div>
+				
+						<div id="surenamebox">			
+							<input class="snamebox" name = "surename" type = "text" size="25" required />
+						</div>
+						<!-- Content phone number -->
+						<div id="phonenumber">
+							<p>Phone Number</p>
+						</div>
+				
+						<div id="phonenumberbox">			
+							<input class="phnumberbox" name = "phonenumber" type = "text" size="25" required />
+						</div>
+						
+						<!-- Content email address -->
+						<div id="emailaddress">
+							<p>Email Address</p>
+						</div>
+				
+						<div id="emailaddressbox">			
+							<input class="emailbox" name = "emailaddress" type = "email" size="25" required />
+						</div>	
+
+						<div id="message">				    
+							<br/>
+								Enter your message :
+							<br/>			                 
+								<textarea rows="5" cols="45" class="typemessage">
+								</textarea>			
+							<br/><br/><button class="button" type="submit" value="Submit">Submit</button>
+						</div>					
+					</div>
+				</form>
+				
+				<div id="rightsidebar">
+					<img src="images/contactus.png" alt="Image of the car for rent" height="400px" width="95%"/>
+						<p id="contactus">
+							Phone Number:0896755436
+							<br/><br/>
+							Email Address:rambowrentcar@gmail.com
+						</p>
+				</div>
+				
+				<!-- Bottom line start here-->
+				<div class="bottomfooter">
+					<h6>Follow us on Social Media</h6>
+						<a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Image of Toyota RAV4" height="50" width="50"/></a>
+						<a href="https://twitter.com/"><img src="images/twitter.png" alt="Image of Toyota RAV4" height="50" width="50"/></a>
+						<a href="https://plus.google.com/"><img src="images/googlep.png" alt="Image of Toyota RAV4" height="50" width="50"/></a>
+					<h6>Contact us at 01-010-000</h6>
+				</div> 
+
+			<!-- footer start here-->
+			<div id="footer">
+				<p style="text-align:center; color:white;"> Copyright &#169; 2016 Antonio Penna and Grigor Danut All rights reserved.</p>
+			</div>  
+			<!-- End of footer -->
+					
+		</div>	
+	</body>
+</html>

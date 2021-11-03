@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Book your Taxi</title>
+	  
+		<link rel="stylesheet" type="text/css" href="css/booktaxi.css"/> 
+		
+		<link rel="stylesheet" type="text/css" media="all" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css" />
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		
+		<link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.js"></script>
+		
+		<script type="text/javascript" >
+			<!--Function insert collecting date-->
+			$( function() {
+				$("#dtcollect").datepicker();			
+			});
+			<!--Function insert collecting time-->
+			$(function () {
+				$("#ntcollect").timepicker({
+					timeFormat: 'H:i:s'   
+				});
+			});
+		
+			function mydatecollect(){
+				//alert("");
+				document.getElementById("dtcollect").hidden=false;
+				document.getElementById("ndtcollect").hidden=true;
+			}
+			function mydate1collect(){
+				d=new Date(document.getElementById("dtcollect").value);
+				dt=d.getDate();
+				mn=d.getMonth();
+				mn++;
+				yy=d.getFullYear();
+				document.getElementById("ndtcollect").value=dt+"/"+mn+"/"+yy
+				document.getElementById("ndtcollect").hidden=false;
+				document.getElementById("dtcollect").hidden=true;
+			
+				if (!collectDateValid()) {
+					alert("collect date invalid");
+				}
+			}
+		
+			function mytimecollect() {
+				document.getElementById("ntcollect").hidden=false;
+			}
+		
+			var isDateInputSupported = function(){
+				var elem = document.createElement('input');
+				elem.setAttribute('type','date');
+				elem.value = 'foo';
+				return (elem.type == 'date' && elem.value != 'foo');
+			}
+
+			<!-- if (!isDateInputSupported())  // or.. !Modernizr.inputtypes.date -->
+			<!-- $('input[type="date"]').datepicker(); -->
+	  
+			<!--Function validate collecting date-->
+			function collectDateValid() {
+				var dtcollectvalue=new Date(document.getElementById("dtcollect").value);
+
+				if (dtcollectvalue.getTime() < (new Date().getTime() - 86400000 ) ){
+					return false;
+				}	
+				else {
+					return true;
+				}
+			}
+			
+			<!--Function validate fill the forms-->			
+			function validate (){
+			
+				var firstnamevalue=document.forms["form1"]["firstname"].value;
+				var surenamevalue=document.forms["form1"]["surename"].value;
+				var phonevalue=document.forms["form1"]["phone"].value;
+			
+			
+				/* Checking the Name field here*/
+				if (firstnamevalue==null ||firstnamevalue== ""){		
+					alert("The First Name filed must be filled out");
+				return false
+				}	
+				/*Checking the Lenght of Name field*/			
+				else if(firstnamevalue.length < 1){			
+					alert("The First Name must have more than 5 Characters");
+				return false
+				}
+										
+				/* Checking the Address Field here*/
+				else if (surenamevalue==null ||surenamevalue== ""){			
+					alert("The Sure Name filed must be filled out");
+				return false
+				}
+				
+				/*Checking the Phone field here*/
+				else if (phonevalue==null ||phonevalue== ""){			
+					alert("The Phone filed must be filled out");
+				return false
+				}
+				
+				else if (isNaN(phonevalue)){
+					alert(phonevalue + " is not a number");
+				return false
+				}
+				
+				else{
+				   alert("Your order has been sent");
+				
+				}			
+			}
+			   
+		</script>
+		<!--Adding style menu-->	   
+		<style type="text/css">
+
+			<!-- menu bar attribute -->
+			html, body, ul,  p,  li {
+				margin: 0;
+				padding: 0;
+				border: none ;
+					
+			}
+			.toolbar { 
+				float: left; 
+				font-size:20px;		
+				list-style-type: none;
+				margin-top: 1.0em;
+				margin-left: 5.0em;
+				text-align:center;
+			}	 
+
+			.toolbar li {
+				float: left;
+				width:200px;
+								
+				background-color:#54BAE2;
+				border:3px solid #FF831C;
+				border-color: #1cfff5 #1cff84 #FF831C; <!-- gives colorfull effect to menu bar -->
+				border-bottom: 5px solid #FF831C;
+				padding:0em;	 
+			}
+
+			.toolbar li a { 
+				float: left; 
+				padding: 1.5em; 
+				color: #fff;
+				font-weight: bold;
+				text-decoration: none; 
+				
+			}
+
+			.toolbar li a:hover { 
+				color: red;
+			}
+
+		</style>
+				
+		<style type="text/css" >
+			p:hover{
+				color:red;
+			}			
+			.fnamebox:hover {
+				background-color:white; 
+			}
+			.snamebox:hover {
+				background-color:white;
+			}
+			.phnumberbox:hover {
+				background-color:white;
+			} 
+			.ebox:hover {
+				background-color:white;
+			} 
+			.paddressbox:hover {
+				background-color:white;
+			}
+			.daddressbox:hover {
+				background-color:white;
+			}
+			.button:hover {
+				color:blue; 
+				background-color:green;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--Main section wrapper-->
+		<div id="wrapper">		
+			<!--Toolbar Menu-->	
+			<div id="header">
+				<div id="header-title">
+					<h1>Reinbow Car Here</h1>	
+				</div>	
+					
+					<div id="menu">			
+						<ul class="toolbar">
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="booktaxi.html">Taxi Services</a></li>
+							<li><a href="selectcar.html">Car Rental</a></li>
+							<li><a href="specialevents.html">Special Events</a></li>
+							<li><a href="contactus.html">Contact us</a></li>
+						</ul>
+					</div>		
+										
+				<div id="booktaxi">
+					<h1>Book your Taxi</h1>
+				</div>	
+			
+				<div id="date">
+					<!--Actual date (today) data show-->
+					<script type="text/javascript">
+						var d = new Date();
+						newD = d.toDateString();
+						document.write("Date : " + newD);          
+					</script>
+				</div>			
+			</div>	  
+				
+			<form name="form1"  onsubmit="return validate()" method="post">
+				
+				<div id="contentmenu">		        
+					<div id="firstname">
+						<p>First Name</p>
+					</div>
+			
+					<div id="firstnamebox">
+						<input class="fnamebox" name = "firstname" type="text" size="25" autofocus required />
+					</div>
+			
+					<div id="surename">
+						<p>Sure Name</p>
+					</div>
+			
+					<div id="surenamebox">
+						<input class="snamebox" name = "surename" type="text" size="25"  required />
+					</div>
+				
+					<div id="phonenumber">
+						<p>Phone Number</p>
+					</div>
+			
+					<div id="phonenumberbox">
+						<input class="phnumberbox" name = "phone" type="text" size="25"  required />
+					</div>
+					
+					<div id="emailaddress">
+						<p>Email Address</p>
+					</div>
+			
+					<div id="emailbox">
+						<input class="ebox" name ="email" type="email" size="25"  required>
+					</div>
+				
+					<div id="pickupaddress">
+						<p>Pick up Address</p>
+					</div>
+			
+					<div id="pickaddressbox">
+						<input class="paddressbox" name="pickaddress" type="text" size="25" required />
+					</div>
+				
+					<div id="destinationaddress">
+						<p>Destination Address</p>
+					</div>
+			
+					<div id="destaddressbox">
+						<input class="daddressbox" name="destaddress" type="text" size="25" required />
+					</div>
+
+					<div id="dateofcollecting">
+						<p>Date of Collecting</p>
+					</div>
+			
+					<div id="datecollectingbox">
+						<input class="datecollectingbox" type="text" value="dd-mm-yyyy" id="dtcollect" onchange="mydate1collect();" hidden />
+						<input class="datecollectingbox" type="text" id="ndtcollect" onclick="mydatecollect();" hidden />
+						<input class="datecollectingbox" type="button" value="Date" onclick="mydatecollect();" />
+					</div>
+					
+					<div id="timeofcollecting">
+						<p>Time of Collecting</p>
+					</div>
+			
+			    	<div id="timecollectingbox">
+						<input class="tcollectingbox" type="text" id="tcollect" onchange="mytime1collect();" hidden />
+						<input class="tcollectingbox" type="text" id="ntcollect" onclick="mytimecollect();" hidden />
+						<input class="tcollectingbox" type="button" value="Time" onclick="mytimecollect();" />
+					</div>
+					
+					<div id="numberseats">
+						<p>Number seats</p>
+					</div>
+			
+					<div id="numberseatsradio">
+						<div class="seatsradio">5 Seats
+							<input type = "radio" name = "spread" value = "fiveseats" />
+						</div>
+						
+						<div class="seatsradio" > 7 Seats
+							<input type = "radio" name = "spread" value = "sevenseats" />
+						</div>
+						
+						<div class="seatsradio" > 9 Seats
+							<input type = "radio" name = "spread" value = "nineseats" />
+						</div>
+					</div>
+					
+					<div id="submit">			        		
+						<button class="button" type="submit" value="Submit">Submit</button>
+					</div>
+					<div id="cancel">				        		
+						<button class="button" type="submit" value="Submit">Cancel</button>
+					</div>				
+				</div>			
+			</form>
+					<!--Right sidebar section-->
+			<div id="rightsidebar">
+				<img src="images/americantaxi.jpg" alt="Image of a taxi car" height="340px" width="95%"/>
+				<br/>		
+				<img src="images/newyorktaxi.jpg" alt="Image of a taxi car" height="340px" width="95%"/>
+			</div>
+			 
+			 <!-- Bottom contact us line start here-->
+			<div class="bottomfooter">
+				<h6>Follow us on Social Media</h6>
+					<a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Image of Toyota RAV4" height="50" width="50"/></a>
+					<a href="https://twitter.com/"><img src="images/twitter.png" alt="Image of Toyota RAV4" height="50" width="50"/></a>
+					<a href="https://plus.google.com/"><img src="images/googlep.png" alt="Image of Toyota RAV4" height="50" width="50"/></a>
+				<h6>Contact us at 01-010-000</h6>
+			</div> 
+
+			<!-- footer start here-->
+			<div id="footer">
+				<p style="text-align:center; color:white;"> Copyright &#169; 2016 Antonio Penna and Grigor Danut All rights reserved.</p>
+			</div>  
+			<!-- End of footer -->
+			 
+		</div>
+	</body>
+</html>
