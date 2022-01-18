@@ -64,15 +64,21 @@
 				padding: 0;
 				border: none ;
 			}
+			
 			.toolbar {
 				float: left; 
+				font-size:20px;
 				list-style-type: none;
-				margin-top: 0.1em;
-				margin-left: 0.0em;
+				margin-top: 1.0em;
+				margin-left: 5.0em;
+				text-align:center;
+				
 			}			 
 
 			.toolbar li {
 				float: left;
+				width:200px;
+
 				background-color:#54BAE2;
 				border:3px solid #FF831C;
 				border-color: #1cfff5 #1cff84 #FF831C; <!-- gives colorfull effect to menu bar -->
@@ -97,9 +103,11 @@
 		
 	<body>
 		<div id="wrapper">
-		   <div id="header">
-			 </div>  
 		
+		   <div id="header">		   
+				
+				<h1>Contact Us</h1>			
+				
 				<div id="menu">
 					<ul class="toolbar">
 						<li><a href="../index.html">Home</a></li>
@@ -109,10 +117,8 @@
 						<li><a href="contactus.html">Contact us</a></li>
 					</ul>
 				</div>
-			
-				<div class="contact">
-					<h1>Contact us</h1>
-				</div>			
+		   
+			 </div>  						
 				
 				<form name="form1"  onsubmit="return validate()" method="post">
 			

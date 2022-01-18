@@ -16,12 +16,12 @@ body {
      box-shadow:5px 10px 10px 5px #888888; 
 }
 
-.header { 
-    height:60px;
-	background-color: #93e1ed;
-    margin: 0 auto;
-    padding: 5px;
-	border-radius:5px;	
+#header { 
+    height:200px;
+	background-color:#F8F8F8;
+    margin:5px;
+    padding:5px;
+	border-radius:10px;	
 }
 
 .style {

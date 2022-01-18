@@ -1,5 +1,11 @@
 /* This is place where styles are created*/
 
+@viewport{ zoom: 1.0; width: extend-to-zoom; }
+@-ms-viewport{ width: extend-to-zoom; zoom: 1.0; }
+@-ms-viewport{
+  width: device-width;
+}
+
 /* wrapper proprieties */
 #wrapper{
 	margin:0 auto;
@@ -13,20 +19,10 @@
 
 /* header proprieties */
 #header { 
-    height:60px;
-	background-color: #93e1ed;
-    margin: 0 auto;
-    padding: 5px;
-	border-radius:5px;
-}
-
-.contact{
-	height:70px;
-	width:70%;
-    float:left;	
-	padding-right:25%;
-	background-color:#d6d6c2;
-	margin-left:25px;
+    height:210px;
+	background-color:#93e1ed;
+    margin:5px;
+    padding:5px;
 	border-radius:10px;
 }
 

@@ -2,10 +2,12 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 	<head>
 
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 		<title>Book your Taxi</title>
 	  
 		<link rel="stylesheet" type="text/css" href="css/booktaxi.css"/> 
@@ -18,6 +20,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.js"></script>
 		
 		<script type="text/javascript" >
+		
 			<!--Function insert collecting date-->
 			$( function() {
 				$("#dtcollect").datepicker();			
@@ -34,6 +37,7 @@
 				document.getElementById("dtcollect").hidden=false;
 				document.getElementById("ndtcollect").hidden=true;
 			}
+			
 			function mydate1collect(){
 				d=new Date(document.getElementById("dtcollect").value);
 				dt=d.getDate();
@@ -118,34 +122,35 @@
 			}
 			   
 		</script>
+		
 		<!--Adding style menu-->	   
 		<style type="text/css">
 
 			<!-- menu bar attribute -->
-			html, body, ul,  p,  li {
+			html, body, ul, p, li {
 				margin: 0;
 				padding: 0;
-				border: none ;
-					
+				border: none;					
 			}
+			
 			.toolbar { 
 				float: left; 
-				font-size:20px;		
+				font-size: 20px;		
 				list-style-type: none;
 				margin-top: 1.0em;
 				margin-left: 5.0em;
-				text-align:center;
+				text-align: center;
 			}	 
 
 			.toolbar li {
 				float: left;
-				width:200px;
+				width: 200px;
 								
-				background-color:#54BAE2;
-				border:3px solid #FF831C;
+				background-color: #54BAE2;
+				border: 3px solid #FF831C;
 				border-color: #1cfff5 #1cff84 #FF831C; <!-- gives colorfull effect to menu bar -->
 				border-bottom: 5px solid #FF831C;
-				padding:0em;	 
+				padding: 0em;	 
 			}
 
 			.toolbar li a { 
@@ -153,8 +158,7 @@
 				padding: 1.5em; 
 				color: #fff;
 				font-weight: bold;
-				text-decoration: none; 
-				
+				text-decoration: none; 				
 			}
 
 			.toolbar li a:hover { 
@@ -164,6 +168,7 @@
 		</style>
 				
 		<style type="text/css" >
+		
 			p:hover{
 				color:red;
 			}			
@@ -189,27 +194,31 @@
 				color:blue; 
 				background-color:green;
 			}
+			
 		</style>
 	</head>
 
 	<body>
 		<!--Main section wrapper-->
 		<div id="wrapper">		
-			<!--Toolbar Menu-->	
+			
+			<!--Header section-->
 			<div id="header">
+			
 				<div id="header-title">
-					<h1>Reinbow Car Here</h1>	
+					<h1>Taxi Booking Service</h1>	
 				</div>	
-					
-					<div id="menu">			
-						<ul class="toolbar">
-							<li><a href="../index.html">Home</a></li>
-							<li><a href="booktaxi.html">Taxi Services</a></li>
-							<li><a href="selectcar.html">Car Rental</a></li>
-							<li><a href="specialevents.html">Special Events</a></li>
-							<li><a href="contactus.html">Contact us</a></li>
-						</ul>
-					</div>		
+				
+				<!--Toolbar Menu-->	
+				<div id="menu">			
+					<ul class="toolbar">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="booktaxi.html">Taxi Services</a></li>
+						<li><a href="selectcar.html">Car Rental</a></li>
+						<li><a href="specialevents.html">Special Events</a></li>
+						<li><a href="contactus.html">Contact us</a></li>
+					</ul>
+				</div>		
 										
 				<div id="booktaxi">
 					<h1>Book your Taxi</h1>
@@ -223,114 +232,121 @@
 						document.write("Date : " + newD);          
 					</script>
 				</div>			
-			</div>	  
+			</div>	 
+			
+			<div id="title">
+			
+				<div id="contentmenu">
 				
-			<form name="form1"  onsubmit="return validate()" method="post">
+					<form name="form1"  onsubmit="return validate()" method="post">				
+									
+						<div id="firstname">
+							<p>First Name</p>
+						</div>
 				
-				<div id="contentmenu">		        
-					<div id="firstname">
-						<p>First Name</p>
-					</div>
-			
-					<div id="firstnamebox">
-						<input class="fnamebox" name = "firstname" type="text" size="25" autofocus required />
-					</div>
-			
-					<div id="surename">
-						<p>Sure Name</p>
-					</div>
-			
-					<div id="surenamebox">
-						<input class="snamebox" name = "surename" type="text" size="25"  required />
-					</div>
+						<div id="firstnamebox">
+							<input class="fnamebox" name = "firstname" type="text" size="25" autofocus required />
+						</div>
 				
-					<div id="phonenumber">
-						<p>Phone Number</p>
-					</div>
-			
-					<div id="phonenumberbox">
-						<input class="phnumberbox" name = "phone" type="text" size="25"  required />
-					</div>
+						<div id="surename">
+							<p>Sure Name</p>
+						</div>
+				
+						<div id="surenamebox">
+							<input class="snamebox" name = "surename" type="text" size="25"  required />
+						</div>
 					
-					<div id="emailaddress">
-						<p>Email Address</p>
-					</div>
-			
-					<div id="emailbox">
-						<input class="ebox" name ="email" type="email" size="25"  required>
-					</div>
+						<div id="phonenumber">
+							<p>Phone Number</p>
+						</div>
 				
-					<div id="pickupaddress">
-						<p>Pick up Address</p>
-					</div>
-			
-					<div id="pickaddressbox">
-						<input class="paddressbox" name="pickaddress" type="text" size="25" required />
-					</div>
+						<div id="phonenumberbox">
+							<input class="phnumberbox" name = "phone" type="text" size="25"  required />
+						</div>
+						
+						<div id="emailaddress">
+							<p>Email Address</p>
+						</div>
 				
-					<div id="destinationaddress">
-						<p>Destination Address</p>
-					</div>
-			
-					<div id="destaddressbox">
-						<input class="daddressbox" name="destaddress" type="text" size="25" required />
-					</div>
+						<div id="emailbox">
+							<input class="ebox" name ="email" type="email" size="25"  required>
+						</div>
+					
+						<div id="pickupaddress">
+							<p>Pick up Address</p>
+						</div>
+				
+						<div id="pickaddressbox">
+							<input class="paddressbox" name="pickaddress" type="text" size="25" required />
+						</div>
+					
+						<div id="destinationaddress">
+							<p>Destination Address</p>
+						</div>
+				
+						<div id="destaddressbox">
+							<input class="daddressbox" name="destaddress" type="text" size="25" required />
+						</div>
 
-					<div id="dateofcollecting">
-						<p>Date of Collecting</p>
-					</div>
-			
-					<div id="datecollectingbox">
-						<input class="datecollectingbox" type="text" value="dd-mm-yyyy" id="dtcollect" onchange="mydate1collect();" hidden />
-						<input class="datecollectingbox" type="text" id="ndtcollect" onclick="mydatecollect();" hidden />
-						<input class="datecollectingbox" type="button" value="Date" onclick="mydatecollect();" />
-					</div>
-					
-					<div id="timeofcollecting">
-						<p>Time of Collecting</p>
-					</div>
-			
-			    	<div id="timecollectingbox">
-						<input class="tcollectingbox" type="text" id="tcollect" onchange="mytime1collect();" hidden />
-						<input class="tcollectingbox" type="text" id="ntcollect" onclick="mytimecollect();" hidden />
-						<input class="tcollectingbox" type="button" value="Time" onclick="mytimecollect();" />
-					</div>
-					
-					<div id="numberseats">
-						<p>Number seats</p>
-					</div>
-			
-					<div id="numberseatsradio">
-						<div class="seatsradio">5 Seats
-							<input type = "radio" name = "spread" value = "fiveseats" />
+						<div id="dateofcollecting">
+							<p>Date of Collecting</p>
+						</div>
+				
+						<div id="datecollectingbox">
+							<input class="datecollectingbox" type="text" value="dd-mm-yyyy" id="dtcollect" onchange="mydate1collect();" hidden />
+							<input class="datecollectingbox" type="text" id="ndtcollect" onclick="mydatecollect();" hidden />
+							<input class="datecollectingbox" type="button" value="Date" onclick="mydatecollect();" />
 						</div>
 						
-						<div class="seatsradio" > 7 Seats
-							<input type = "radio" name = "spread" value = "sevenseats" />
+						<div id="timeofcollecting">
+							<p>Time of Collecting</p>
+						</div>
+				
+						<div id="timecollectingbox">
+							<input class="tcollectingbox" type="text" id="tcollect" onchange="mytime1collect();" hidden />
+							<input class="tcollectingbox" type="text" id="ntcollect" onclick="mytimecollect();" hidden />
+							<input class="tcollectingbox" type="button" value="Time" onclick="mytimecollect();" />
 						</div>
 						
-						<div class="seatsradio" > 9 Seats
-							<input type = "radio" name = "spread" value = "nineseats" />
+						<div id="numberseats">
+							<p>Number seats</p>
 						</div>
-					</div>
-					
-					<div id="submit">			        		
-						<button class="button" type="submit" value="Submit">Submit</button>
-					</div>
-					<div id="cancel">				        		
-						<button class="button" type="submit" value="Submit">Cancel</button>
-					</div>				
-				</div>			
-			</form>
-					<!--Right sidebar section-->
-			<div id="rightsidebar">
-				<img src="images/americantaxi.jpg" alt="Image of a taxi car" height="340px" width="95%"/>
-				<br/>		
-				<img src="images/newyorktaxi.jpg" alt="Image of a taxi car" height="340px" width="95%"/>
+				
+						<div id="numberseatsradio">
+							<div class="seatsradio">5 Seats
+								<input type = "radio" name = "spread" value = "fiveseats" />
+							</div>
+							
+							<div class="seatsradio" > 7 Seats
+								<input type = "radio" name = "spread" value = "sevenseats" />
+							</div>
+							
+							<div class="seatsradio" > 9 Seats
+								<input type = "radio" name = "spread" value = "nineseats" />
+							</div>
+						</div>
+						
+						<div id="submit">			        		
+							<button class="button" type="submit" value="Submit">Submit</button>
+						</div>
+						<div id="cancel">				        		
+							<button class="button" type="submit" value="Submit">Cancel</button>
+						</div>
+					</form>
+				</div>	
+				
+				<!--Right sidebar section-->
+				<div id="rightsidebar">
+				<br/>
+					<img src="images/americantaxi.jpg" alt="Image of a taxi car" height="340px" width="98%"/>
+											
+					<img src="images/newyorktaxi.jpg" alt="Image of a taxi car" height="335px" width="98%"/>
+				</div>
+			
 			</div>
 			 
-			 <!-- Bottom contact us line start here-->
-			<div class="bottomfooter">
+			<!-- Bottom contact us line start here-->
+			<div id="bottomfooter">
 				<h6>Follow us on Social Media</h6>
 					<a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Image of Toyota RAV4" height="50" width="50"/></a>
 					<a href="https://twitter.com/"><img src="images/twitter.png" alt="Image of Toyota RAV4" height="50" width="50"/></a>

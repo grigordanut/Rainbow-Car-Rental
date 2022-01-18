@@ -16,18 +16,30 @@
     border-radius:12px;
     box-shadow:5px 10px 10px 5px #888888; 
 }
+
 /* header proprieties */
 #header { 
-    height:60px;
-	background-color: #93e1ed;
-    margin: 0 auto;
-    padding: 5px;
+    height:290px;
+	background-color:#F8F8F8;
+    margin:0 auto;
+    padding:5px;
 	border-radius:5px;
 }
+
+#header-title{
+	height:80px;
+	width:100%;
+	float:left;
+	background-color:#93e1ed; 	
+	margin-top:0px;		   
+	border-radius:5px;
+}
+
 /* h1 Proprieties*/
 h1{
 	text-align:center;
 }
+
 /* h6 Proprieties*/
 h6 {
 	font-family: georgia;
@@ -73,6 +85,7 @@ p{
 	padding-top:20px;
 	padding-left:20px;
 }
+
 /* maincontent proprieties */
 #content{
 	height:790px;
@@ -84,6 +97,7 @@ p{
 	margin-top:20px;
 	padding-left:15px;
 }
+
 /* Contact menu poprieties*/
 #contentmenu{
 	height:770px;

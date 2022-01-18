@@ -33,49 +33,104 @@
 				padding-left: 5px;
 				padding-right: 5px;
 			}
+			
+			<!-- menu bar attribute -->
+			html, body, ul, p, li {
+				margin: 0;
+				padding: 0;
+				border: none;					
+			}
+			
+			.toolbar { 
+				float: left; 
+				font-size: 20px;		
+				list-style-type: none;
+				margin-top: 1.0em;
+				margin-left: 5.0em;
+				text-align: center;
+			}	 
+
+			.toolbar li {
+				float: left;
+				width: 200px;
+								
+				background-color: #54BAE2;
+				border: 3px solid #FF831C;
+				border-color: #1cfff5 #1cff84 #FF831C; <!-- gives colorfull effect to menu bar -->
+				border-bottom: 5px solid #FF831C;
+				padding: 0em;	 
+			}
+
+			.toolbar li a { 
+				float: left; 
+				padding: 1.5em; 
+				color: #fff;
+				font-weight: bold;
+				text-decoration: none; 				
+			}
+
+			.toolbar li a:hover { 
+				color: red;
+			}
+
 		</style>
 	</head> 
 
 	<body>
+	
 		<!-- wrapper starts here-->
 		<div id="wrapper">
 	  
 			<!-- header starts here-->
-			<div class="header">
-				<h1>Reinbow Car Here</h1>
+			<div id="header">			
+				
+				<h1>Reinbow Car Here</h1>		
+			
+				<div>	
+					<!-- Menu starts here-->				
+					<ul class="toolbar">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="booktaxi.html">Taxi Services</a></li>
+						<li><a href="selectcar.html">Car Rental</a></li>
+						<li><a href="specialevents.html">Special Events</a></li>
+						<li><a href="contactus.html">Contact us</a></li>
+					</ul>
+					<!-- Menu ends here-->
+				</div>
+				
 			</div>			  
-			<!-- Menu starts here-->
-			<ul class="toolbar">
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="booktaxi.html">Taxi Services</a></li>
-				<li><a href="selectcar.html">Car Rental</a></li>
-				<li><a href="specialevents.html">Special Events</a></li>
-				<li><a href="contactus.html">Contact us</a></li>
-			</ul>
-			<!-- Menu ends here-->
-		
+					
 			<!-- Divs Style starts here-->
 			<div class="style">
-				<br/><br/><br/>
 			
 				<h2>Toyota RAV4</h2> 
 				<img src="images/Toyota1.jpg" alt="Image of Toyota RAV4"/>
 
 				<!-- Description box starts here-->
 				<div class="box">
+				
 					<div class="title">
-						<a href="../pages/rentcar.html">Booking Now</a>
+						<a href="../pages/rentcar.html">Rent this car</a>
 					</div>
-						<div class="meta">Toyota RAV4:
-						</div>
-							<div class="content">
-								<p>Its angled headlamps and sharply creased bodywork give the RAV4 an assertive presence, but don’t be fooled—under the skin, it’s a practical, comfortable, and easygoing ute. A 176-hp 2.5-liter four and a six-speed automatic are standard with either front- or all-wheel drive. A hybrid, which returned an impressive 31 mpg in our tests, is also available and gets standard all-wheel drive. A 6.1-inch infotainment system is standard on LE, SE, and XLE trims; Limited models get a 7.0-inch unit. </p>
-							</div>
-						<div class="bottom">
-						</div>
-					<ul class="toolbar">
-						<li><a href="../pages/rentcar.html">Booking Now</a></li>
-					</ul>
+					
+					<div class="meta">
+						Toyota RAV4:					
+					</div>
+					
+					<div class="content">
+						<p>Its angled headlamps and sharply creased bodywork give the RAV4 an assertive presence, but don’t be fooled—under the skin, it’s a practical, 
+						comfortable, and easygoing ute. A 176-hp 2.5-liter four and a six-speed automatic are standard with either front- or all-wheel drive. 
+						A hybrid, which returned an impressive 31 mpg in our tests, is also available and gets standard all-wheel drive. 
+						A 6.1-inch infotainment system is standard on LE, SE, and XLE trims; Limited models get a 7.0-inch unit. 
+						</p>
+					</div>
+					
+					<div class="bottom">						
+						<ul class="toolbar">
+							<li><a href="../pages/rentcar.html">Rent this car</a></li>
+						</ul>
+					</div>
+					
 				</div>
 			 
 				<!-- unsorted list starts here-->
@@ -87,9 +142,11 @@
 
 				<!-- Divs tables whit specs starts here-->
 				<div class="Table">	
+				
 					<div class="Title">
 						<p>Specifications</p>
 					</div>
+					
 					<div class="Heading">
 						<div class="Cell">
 							<p>Engine</p>
@@ -101,6 +158,7 @@
 							<p>Transmission</p>
 						</div>
 					</div>
+					
 					<div class="Row">
 						<div class="Cell">
 							<p>2.0 L 3S-FE I4 (gasoline)</p>
@@ -112,6 +170,7 @@
 							<p>5-speed manual</p>
 						</div>
 					</div>
+					
 					<div class="Row">
 						<div class="Cell">
 							<p>2.0 L 3S-FE I5 (gasoline)</p>
@@ -123,36 +182,47 @@
 							<p>4-speed automatic</p>
 						</div>			
 					</div>
-
-				</div>				
-			</div>	
+					
+				</div>	
+				
+			</div>				
 			<!-- End of Divs tables-->	
 		
-				<!-- Divs Style starts here-->
+			<!-- Divs Style starts here-->
 			<div class="style">
-				<br/>
-				<br/>
-				<br/>
 			
 				<h2>Lloyd</h2>
 				<img src="images/car3.jpg" alt="Image of Lloyd"/>
 
 				<!-- Description box starts here-->
 				<div class="box">
+				
 					<div class="title">
-						<a href="../pages/rentcar.html">Booking Now</a>
+						<a href="../pages/rentcar.html">Rent this car</a>
 					</div>
-					<div class="meta">Lloyd:</div>
+					
+					<div class="meta">
+						Lloyd:
+					</div>
+					
 					<div class="content">
-						<p>Its angled headlamps and sharply creased bodywork give the RAV4 an assertive presence, but don’t be fooled—under the skin, it’s a practical, comfortable, and easygoing ute. A 176-hp 2.5-liter four and a six-speed automatic are standard with either front- or all-wheel drive. A hybrid, which returned an impressive 31 mpg in our tests, is also available and gets standard all-wheel drive. A 6.1-inch infotainment system is standard on LE, SE, and XLE trims; Limited models get a 7.0-inch unit. </p>
+						<p>
+						Its angled headlamps and sharply creased bodywork give the RAV4 an assertive presence, but don’t be fooled—under the skin, it’s a practical, comfortable, 
+						and easygoing ute. A 176-hp 2.5-liter four and a six-speed automatic are standard with either front- or all-wheel drive. 
+						A hybrid, which returned an impressive 31 mpg in our tests, is also available and gets standard all-wheel drive. 
+						A 6.1-inch infotainment system is standard on LE, SE, and XLE trims; Limited models get a 7.0-inch unit. 
+						</p>
 					</div>
-					<div class="bottom">
-					</div>
-					<ul class="toolbar">
-						<li>
-							<a href="../pages/rentcar.html">Booking Now</a>
-						</li>
-					</ul>
+					
+					<div class="bottom">					
+						<ul class="toolbar">
+							<li>
+								<a href="../pages/rentcar.html">Rent this car</a>
+							</li>
+						</ul>
+					
+					</div>				
+					
 				</div>
 			 
 				<!-- unsorted list starts here-->
@@ -164,9 +234,11 @@
 	
 				<!-- Divs tables whit specs starts here-->
 				<div class="Table">	
+				
 					<div class="Title">
 						<p>Specifications</p>
 					</div>
+					
 					<div class="Heading">
 						<div class="Cell">
 							<p>Engine</p>
@@ -178,6 +250,7 @@
 							<p>Transmission</p>
 						</div>
 					</div>
+					
 					<div class="Row">
 						<div class="Cell">
 							<p>2.0 L 3S-FE I4 (gasoline)</p>
@@ -189,6 +262,7 @@
 							<p>5-speed manual</p>
 						</div>
 					</div>
+					
 					<div class="Row">
 						<div class="Cell">
 							<p>2.0 L 3S-FE I5 (gasoline)</p>
@@ -200,63 +274,73 @@
 							<p>4-speed automatic</p>
 						</div>			
 					</div>
-
-				</div>
 					
+				</div>	
 				
 			</div> 
 			<!-- End of Divs tables-->						
 			
 			<!-- Divs Style starts here-->
 			<div class="style">
-				<br/>
-				<br/>
-				<br/>
 			
 				<h2>Toyota Avensis</h2>
 					<img src="images/Toyotaave.jpg" alt="Image of Toyota Avenis"/>
 
 				<!-- Description box starts here-->
 				<div class="box">
+				
 					<div class="title">
-						<a href="../pages/rentcar.html">Booking Now</a>
+						<a href="../pages/rentcar.html">Rent this car</a>
 					</div>
-					<div class="meta">Toyota Avensis:</div>
-						<div class="content">
-							<p>Its angled headlamps and sharply creased bodywork give the RAV4 an assertive presence, but don’t be fooled—under the skin, it’s a practical, comfortable, and easygoing ute. A 176-hp 2.5-liter four and a six-speed automatic are standard with either front- or all-wheel drive. A hybrid, which returned an impressive 31 mpg in our tests, is also available and gets standard all-wheel drive. A 6.1-inch infotainment system is standard on LE, SE, and XLE trims; Limited models get a 7.0-inch unit. </p>
-					   </div>
-					  <div class="bottom">
-					  </div>
-					<ul class="toolbar">
-						<li>
-							<a href="../pages/rentcar.html">Booking Now</a>
-						</li>
-					</ul>
+					
+					<div class="meta">
+						Toyota Avensis:
+					</div>
+					
+					<div class="content">
+						<p>
+						Its angled headlamps and sharply creased bodywork give the RAV4 an assertive presence, but don’t be fooled—under the skin, it’s a practical, comfortable, 
+						and easygoing ute. A 176-hp 2.5-liter four and a six-speed automatic are standard with either front- or all-wheel drive. 
+						A hybrid, which returned an impressive 31 mpg in our tests, is also available and gets standard all-wheel drive. 
+						A 6.1-inch infotainment system is standard on LE, SE, and XLE trims; Limited models get a 7.0-inch unit. </p>
+					 </div>
+					 
+					<div class="bottom">					
+						<ul class="toolbar">
+							<li>
+								<a href="../pages/rentcar.html">Rent this car</a>
+							</li>
+						</ul>					
+					</div>					
+					
 				</div>
 			 
 				<!-- unsorted list starts here-->
 				<ul>
 					<li>3 Days 35/euro per day</li> 
-						<li>5 Days 30/euro per day </li>
+					<li>5 Days 30/euro per day </li>
 					<li>7 Days 25/euro per day</li>
 				</ul>
 
-					<!-- Divs tables whit specs starts here-->
+				<!-- Divs tables whit specs starts here-->
 				<div class="Table">	
+				
 					<div class="Title">
 						<p>Specifications</p>
 					</div>
+					
 					<div class="Heading">
 						<div class="Cell">
 							<p>Engine</p>
-						</div>
+						</div>						
 						<div class="Cell">
 							<p>Doors</p>
-						</div>
+						</div>						
 						<div class="Cell">
 							<p>Transmission</p>
 						</div>
 					</div>
+					
 					<div class="Row">
 						<div class="Cell">
 							<p>2.0 L 3S-FE I4 (gasoline)</p>
@@ -268,6 +352,7 @@
 							<p>5-speed manual</p>
 						</div>
 					</div>
+					
 					<div class="Row">
 						<div class="Cell">
 							<p>2.0 L 3S-FE I5 (gasoline)</p>
@@ -279,34 +364,44 @@
 							<p>4-speed automatic</p>
 						</div>			
 					</div>
-				</div>			
+					
+				</div>	
+				
 			</div> 
 			<!-- Divs Style ends here-->			
 			
 			<!-- Divs Style starts here-->
 			<div class="style">
-				<br/>
-				<br/>
-				<br/>
 					
 				<h2>Volkswagen Passat</h2>
 					<img src="images/volkswpassat.jpg" alt="Image of Volkswagen Passat"/>
 
 				<!-- Description box starts here-->
 				<div class="box">
+				
 					<div class="title">
-						<a href="../pages/rentcar.html">Booking Now</a>
+						<a href="../pages/rentcar.html">Rent this car</a>
 					</div>
-					<div class="meta">Volkswagen Passat:
+					
+					<div class="meta">
+						Volkswagen Passat:
 					</div>
+					
 					<div class="content">
-						<p>Its angled headlamps and sharply creased bodywork give the RAV4 an assertive presence, but don’t be fooled—under the skin, it’s a practical, comfortable, and easygoing ute. A 176-hp 2.5-liter four and a six-speed automatic are standard with either front- or all-wheel drive. A hybrid, which returned an impressive 31 mpg in our tests, is also available and gets standard all-wheel drive. A 6.1-inch infotainment system is standard on LE, SE, and XLE trims; Limited models get a 7.0-inch unit. </p>
+						<p>
+						Its angled headlamps and sharply creased bodywork give the RAV4 an assertive presence, but don’t be fooled—under the skin, it’s a practical, comfortable, 
+						and easygoing ute. A 176-hp 2.5-liter four and a six-speed automatic are standard with either front- or all-wheel drive. 
+						A hybrid, which returned an impressive 31 mpg in our tests, is also available and gets standard all-wheel drive. 
+						A 6.1-inch infotainment system is standard on LE, SE, and XLE trims; Limited models get a 7.0-inch unit. 
+						</p>
 					</div>
-					<div class="bottom">
+					
+					<div class="bottom">					
+						<ul class="toolbar">
+							<li><a href="../pages/rentcar.html">Rent this car</a></li>
+						</ul>					
 					</div>
-					<ul class="toolbar">
-						<li><a href="../pages/rentcar.html">Booking Now</a></li>
-					</ul>
+					
 				</div>
 				 
 				<!-- unsorted list starts here-->
@@ -318,9 +413,11 @@
 
 				<!-- Divs tables with specs starts here-->
 				<div class="Table">	
+				
 					<div class="Title">
 						<p>Specifications</p>
 					</div>
+					
 					<div class="Heading">
 						<div class="Cell">
 							<p>Engine</p>
@@ -332,6 +429,7 @@
 							<p>Transmission</p>
 						</div>
 					</div>
+					
 					<div class="Row">
 						<div class="Cell">
 							<p>2.0 L 3S-FE I4 (gasoline)</p>
@@ -343,6 +441,7 @@
 							<p>5-speed manual</p>
 						</div>
 					</div>
+					
 					<div class="Row">
 						<div class="Cell">
 							<p>2.0 L 3S-FE I5 (gasoline)</p>
@@ -354,7 +453,9 @@
 							<p>4-speed automatic</p>
 						</div>			
 					</div>
-				</div>			
+					
+				</div>	
+				
 			</div> 
 			<!-- Divs Style ends here-->		
 			

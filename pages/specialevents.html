@@ -2,318 +2,358 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head> 
-       <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-	   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-       <title>Select a Car</title>
-	   <link href= "css/selectcar.css" type="text/css" rel="stylesheet"/>  
+
+	<head> 
+  
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Select a Car</title>
+		<link href= "css/selectcar.css" type="text/css" rel="stylesheet"/>  
 	   
 
 
-<style type="text/css">
-    .Table
-    {
-        display: table;
-    }
-    .Title
-    {
-        display: table-caption;
-        text-align: center;
-        font-weight: bold;
-        font-size: larger;
-    }
-    .Heading
-    {
-        display: table-row;
-        font-weight: bold;
-        text-align: center;
-    }
-    .Row
-    {
-        display: table-row;
-    }
-    .Cell
-    {
-        display: table-cell;
-        border: solid;
-        border-width: thin;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-</style>
-
-  </head> 
-  <body>
-  <!-- wrapper starts here-->
-  <div id="wrapper">
-  
-         <!-- header starts here-->
-          <div id="header">
-  
-          </div>
-		  
-   <!-- Menu starts here-->
-     <ul class="toolbar">
-          <li><a href="../index.html">Home</a></li>
-           <li><a href="booktaxi.html">Taxi Services</a></li>
-            <li><a href="selectcar.html">Car Rental</a></li>
-             <li><a href="specialevents.html">Special Events</a></li>
-           <li><a href="contactus.html">Contact us</a></li>
-      </ul>
-   <!-- Menu ends here-->
-    
-   <!-- Divs Style starts here-->
-	<div class="style">
-	<br/>
-	  <br/>
-	<br/>
+		<style type="text/css">
+			.Table
+			{
+				display: table;
+			}
+			.Title
+			{
+				display: table-caption;
+				text-align: center;
+				font-weight: bold;
+				font-size: larger;
+			}
+			.Heading
+			{
+				display: table-row;
+				font-weight: bold;
+				text-align: center;
+			}
+			.Row
+			{
+				display: table-row;
+			}
+			.Cell
+			{
+				display: table-cell;
+				border: solid;
+				border-width: thin;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
 		
-     <h2>Limousine</h2> 
-           <img src="images/limousine.jpg" alt="Image of Limousine"/>
+			<!--Adding style menu-->	   
+			
+			<!-- menu bar attribute -->
+			html, body, ul, p, li {
+				margin: 0;
+				padding: 0;
+				border: none;					
+			}
+				
+			.toolbar { 
+				float: left; 
+				font-size: 20px;		
+				list-style-type: none;
+				margin-top: 1.0em;
+				margin-left: 5.0em;
+				text-align: center;
+			}	 
 
-		   <!-- Description box starts here-->
-         <div class="box">
-           <div class="title"><a href="../pages/rentcar.html">Booking Now</a>
-		    </div>
-             <div class="meta">Limousine:</div>
-               <div class="content">
-                <p>Its angled headlamps and sharply creased bodywork give the RAV4 an assertive presence, but don’t be fooled—under the skin, it’s a practical, comfortable, and easygoing ute. A 176-hp 2.5-liter four and a six-speed automatic are standard with either front- or all-wheel drive. A hybrid, which returned an impressive 31 mpg in our tests, is also available and gets standard all-wheel drive. A 6.1-inch infotainment system is standard on LE, SE, and XLE trims; Limited models get a 7.0-inch unit. </p>
-               </div>
-              <div class="bottom"></div>
-			<ul class="toolbar">
-             <li><a href="../pages/rentcar.html">Booking Now</a></li>
-	        </ul>
-         </div>
-		 
-   <!-- unsorted list starts here-->
-    <ul>
-       <li>3 Days 135/euro per day</li> 
-         <li>5 Days 30/euro per day </li>
-       <li>7 Days 25/euro per day</li>
-    </ul>
+			.toolbar li {
+				float: left;
+				width: 200px;
+									
+				background-color: #54BAE2;
+				border: 3px solid #FF831C;
+				border-color: #1cfff5 #1cff84 #FF831C; <!-- gives colorfull effect to menu bar -->
+				border-bottom: 5px solid #FF831C;
+				padding: 0em;	 
+			}
 
-	<!-- Divs tables whit specs starts here-->
-	<div class="Table">	
-       <div class="Title">
-        <p>Specifications</p>
-    </div>
-    <div class="Heading">
-        <div class="Cell">
-            <p>Engine</p>
-        </div>
-        <div class="Cell">
-            <p>Doors</p>
-        </div>
-        <div class="Cell">
-            <p>Transmission</p>
-        </div>
-    </div>
-    <div class="Row">
-        <div class="Cell">
-            <p>2.0 L 3S-FE I4 (gasoline)</p>
-        </div>
-        <div class="Cell">
-            <p>3-door wagon</p>
-        </div>
-        <div class="Cell">
-            <p>5-speed manual</p>
-        </div>
-    </div>
-    <div class="Row">
-        <div class="Cell">
-            <p>2.0 L 3S-FE I4 (gasoline)</p>
-        </div>
-        <div class="Cell">
-            <p>5-door wagon</p>
-        </div>
-        <div class="Cell">
-            <p>4-speed automatic</p>
-        </div>			
-	</div>
+			.toolbar li a { 
+				float: left; 
+				padding: 1.5em; 
+				color: #fff;
+				font-weight: bold;
+				text-decoration: none; 				
+			}
 
-  </div>
-<!-- End of Divs tables-->
+			.toolbar li a:hover { 
+				color: red;
+			}		
+
+		</style>
+	</head> 
 	
-	</div> 
-	<!-- Divs Style starts here-->
+	<body>
 	
 	
-	
-	
-	  <!-- Divs Style starts here-->
-	<div class="style">
-	<br/>
-	  <br/>
-	<br/>
+		<!-- wrapper starts here-->
+		<div id="wrapper">
+	  
+			<!-- header starts here-->
+			 <div id="header">        
+			 
+			 <h1>Reinbow Car Here</h1>
+			  
+				<!-- Menu starts here-->
+				<ul class="toolbar">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="booktaxi.html">Taxi Services</a></li>
+					<li><a href="selectcar.html">Car Rental</a></li>
+					<li><a href="specialevents.html">Special Events</a></li>
+					<li><a href="contactus.html">Contact us</a></li>
+				</ul>
+				<!-- Menu ends here-->
+			</div>
 		
-     <h2>Hummer Limousine</h2>
-		  <img src="images/hummerlimo.jpg" alt="Image of Hummer Limousine"/>
+			<!-- Divs Style starts here-->
+			<div class="style">
+			
+			<h2>Limousine</h2> 
+			<img src="images/limousine.jpg" alt="Image of Limousine"/>
 
-		   <!-- Description box starts here-->
-         <div class="box">
-           <div class="title"><a href="../pages/rentcar.html">Booking Now</a>
-		    </div>
-             <div class="meta">Hummer Limousine:</div>
-               <div class="content">
-                <p>Its angled headlamps and sharply creased bodywork give the RAV4 an assertive presence, but don’t be fooled—under the skin, it’s a practical, comfortable, and easygoing ute. A 176-hp 2.5-liter four and a six-speed automatic are standard with either front- or all-wheel drive. A hybrid, which returned an impressive 31 mpg in our tests, is also available and gets standard all-wheel drive. A 6.1-inch infotainment system is standard on LE, SE, and XLE trims; Limited models get a 7.0-inch unit. </p>
-               </div>
-              <div class="bottom"></div>
-			<ul class="toolbar">
-             <li><a href="../pages/rentcar.html">Booking Now</a></li>
-	        </ul>
-         </div>
-		 
-   <!-- unsorted list starts here-->
-    <ul>
-       <li>3 Days 35/euro per day</li> 
-         <li>5 Days 30/euro per day </li>
-       <li>7 Days 25/euro per day</li>
-    </ul>
+			<!-- Description box starts here-->
+			<div class="box">
+				<div class="title">
+					<a href="../pages/rentcar.html">Booking Now</a>
+				</div>
+				
+				<div class="meta">Limousine:</div>
+					<div class="content">
+						<p>Its angled headlamps and sharply creased bodywork give the RAV4 an assertive presence, but don’t be fooled—under the skin, it’s a practical, comfortable, and easygoing ute. A 176-hp 2.5-liter four and a six-speed automatic are standard with either front- or all-wheel drive. A hybrid, which returned an impressive 31 mpg in our tests, is also available and gets standard all-wheel drive. A 6.1-inch infotainment system is standard on LE, SE, and XLE trims; Limited models get a 7.0-inch unit. </p>
+					</div>
+				<div class="bottom">
+					<ul class="toolbar">
+						<li><a href="../pages/rentcar.html">Booking Now</a></li>
+					</ul>
+				</div>				
+			</div>
+			 
+			<!-- unsorted list starts here-->
+			<ul>
+				<li>3 Days 135/euro per day</li> 
+				<li>5 Days 30/euro per day </li>
+				<li>7 Days 25/euro per day</li>
+			</ul>
 
-	<!-- Divs tables whit specs starts here-->
-	<div class="Table">	
-       <div class="Title">
-        <p>Specifications</p>
-    </div>
-    <div class="Heading">
-        <div class="Cell">
-            <p>Engine</p>
-        </div>
-        <div class="Cell">
-            <p>Doors</p>
-        </div>
-        <div class="Cell">
-            <p>Transmission</p>
-        </div>
-    </div>
-    <div class="Row">
-        <div class="Cell">
-            <p>2.0 L 3S-FE I4 (gasoline)</p>
-        </div>
-        <div class="Cell">
-            <p>3-door wagon</p>
-        </div>
-        <div class="Cell">
-            <p>5-speed manual</p>
-        </div>
-    </div>
-    <div class="Row">
-        <div class="Cell">
-            <p>2.0 L 3S-FE I5 (gasoline)</p>
-        </div>
-        <div class="Cell">
-            <p>5-door wagon</p>
-        </div>
-        <div class="Cell">
-            <p>4-speed automatic</p>
-        </div>			
-	</div>
+			<!-- Divs tables whit specs starts here-->
+			<div class="Table">	
+				<div class="Title">
+				<p>Specifications</p>
+			</div>
+			<div class="Heading">
+				<div class="Cell">
+					<p>Engine</p>
+				</div>
+				<div class="Cell">
+				<p>Doors</p>
+			</div>
+			<div class="Cell">
+				<p>Transmission</p>
+			</div>
+			</div>
+			<div class="Row">
+			<div class="Cell">
+				<p>2.0 L 3S-FE I4 (gasoline)</p>
+			</div>
+			<div class="Cell">
+				<p>3-door wagon</p>
+			</div>
+			<div class="Cell">
+				<p>5-speed manual</p>
+			</div>
+			</div>
+			<div class="Row">
+			<div class="Cell">
+				<p>2.0 L 3S-FE I4 (gasoline)</p>
+			</div>
+			<div class="Cell">
+				<p>5-door wagon</p>
+			</div>
+			<div class="Cell">
+				<p>4-speed automatic</p>
+			</div>			
+			</div>
 
-  </div>
-<!-- End of Divs tables-->
-	
-	</div> 
-	<!-- Divs Style starts here-->
-	
-	
-	
-	
-		  <!-- Divs Style starts here-->
-	<div class="style">
-	<br/>
-	  <br/>
-	<br/>
+			</div>
+			<!-- End of Divs tables-->
 		
-     <h2>Party Bus</h2>
-		  <img src="images/partybus.jpg" alt="Image of Toyota Avenis"/>
-
-		   <!-- Description box starts here-->
-         <div class="box">
-           <div class="title"><a href="../pages/rentcar.html">Booking Now</a>
-		    </div>
-             <div class="meta">Party Bus:</div>
-               <div class="content">
-                <p>Its angled headlamps and sharply creased bodywork give the RAV4 an assertive presence, but don’t be fooled—under the skin, it’s a practical, comfortable, and easygoing ute. A 176-hp 2.5-liter four and a six-speed automatic are standard with either front- or all-wheel drive. A hybrid, which returned an impressive 31 mpg in our tests, is also available and gets standard all-wheel drive. A 6.1-inch infotainment system is standard on LE, SE, and XLE trims; Limited models get a 7.0-inch unit. </p>
-               </div>
-              <div class="bottom"></div>
-			<ul class="toolbar">
-             <li><a href="../pages/rentcar.html">Booking Now</a></li>
-	        </ul>
-         </div>
-		 
-   <!-- unsorted list starts here-->
-    <ul>
-       <li>3 Days 35/euro per day</li> 
-         <li>5 Days 30/euro per day </li>
-       <li>7 Days 25/euro per day</li>
-    </ul>
-
-	<!-- Divs tables whit specs starts here-->
-	<div class="Table">	
-       <div class="Title">
-        <p>Specifications</p>
-    </div>
-    <div class="Heading">
-        <div class="Cell">
-            <p>Engine</p>
-        </div>
-        <div class="Cell">
-            <p>Doors</p>
-        </div>
-        <div class="Cell">
-            <p>Transmission</p>
-        </div>
-    </div>
-    <div class="Row">
-        <div class="Cell">
-            <p>2.0 L 3S-FE I4 (gasoline)</p>
-        </div>
-        <div class="Cell">
-            <p>3-door wagon</p>
-        </div>
-        <div class="Cell">
-            <p>5-speed manual</p>
-        </div>
-    </div>
-    <div class="Row">
-        <div class="Cell">
-            <p>2.0 L 3S-FE I5 (gasoline)</p>
-        </div>
-        <div class="Cell">
-            <p>5-door wagon</p>
-        </div>
-        <div class="Cell">
-            <p>4-speed automatic</p>
-        </div>			
-	</div>
-
-  </div>
-<!-- End of Divs tables-->
-	
-	</div> 
-	<!-- Divs Style starts here-->
+			</div> 
+			<!-- Divs Style starts here-->
 		
-	
-	<!-- Bottom line start here-->
-   <div class="bottomfooter">
-	   <h6>Follow us on Social Media</h6>
-	    <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Image of Toyota RAV4" height="50" width="50"/></a>
-          <a href="https://twitter.com/"><img src="images/twitter.png" alt="Image of Toyota RAV4" height="50" width="50"/></a>
-         <a href="https://plus.google.com/"><img src="images/googlep.png" alt="Image of Toyota RAV4" height="50" width="50"/></a>
-      <h6>Contact us at 01-010-000</h6>
-   </div> 
+		
+		
+		
+			<!-- Divs Style starts here-->
+			<div class="style">
+			
+			<h2>Hummer Limousine</h2>
+			  <img src="images/hummerlimo.jpg" alt="Image of Hummer Limousine"/>
 
-   
-  <!-- footer start here-->
-   <div id="footer">
-      <p style="text-align:center; color:white;"> Copyright &#169; 2016 Antonio Penna and Grigor Danut All rights reserved.</p>
-   </div>  
-<!-- End of footer -->
+			   <!-- Description box starts here-->
+			 <div class="box">
+			   <div class="title"><a href="../pages/rentcar.html">Booking Now</a>
+				</div>
+				 <div class="meta">Hummer Limousine:</div>
+				   <div class="content">
+					<p>Its angled headlamps and sharply creased bodywork give the RAV4 an assertive presence, but don’t be fooled—under the skin, it’s a practical, comfortable, and easygoing ute. A 176-hp 2.5-liter four and a six-speed automatic are standard with either front- or all-wheel drive. A hybrid, which returned an impressive 31 mpg in our tests, is also available and gets standard all-wheel drive. A 6.1-inch infotainment system is standard on LE, SE, and XLE trims; Limited models get a 7.0-inch unit. </p>
+				   </div>
+				  <div class="bottom"></div>
+				<ul class="toolbar">
+				 <li><a href="../pages/rentcar.html">Booking Now</a></li>
+				</ul>
+			 </div>
+			 
+			<!-- unsorted list starts here-->
+			<ul>
+				<li>3 Days 35/euro per day</li> 
+				<li>5 Days 30/euro per day </li>
+				<li>7 Days 25/euro per day</li>
+			</ul>
 
-</div>
-<!-- End of Wrapper -->
+			<!-- Divs tables whit specs starts here-->
+			<div class="Table">	
+			<div class="Title">
+			<p>Specifications</p>
+			</div>
+			<div class="Heading">
+			<div class="Cell">
+				<p>Engine</p>
+			</div>
+			<div class="Cell">
+				<p>Doors</p>
+			</div>
+			<div class="Cell">
+				<p>Transmission</p>
+			</div>
+			</div>
+			<div class="Row">
+			<div class="Cell">
+				<p>2.0 L 3S-FE I4 (gasoline)</p>
+			</div>
+			<div class="Cell">
+				<p>3-door wagon</p>
+			</div>
+			<div class="Cell">
+				<p>5-speed manual</p>
+			</div>
+			</div>
+			<div class="Row">
+			<div class="Cell">
+				<p>2.0 L 3S-FE I5 (gasoline)</p>
+			</div>
+			<div class="Cell">
+				<p>5-door wagon</p>
+			</div>
+			<div class="Cell">
+				<p>4-speed automatic</p>
+			</div>			
+			</div>
 
-  </body>
+			</div>
+			<!-- End of Divs tables-->
+		
+			</div> 
+			<!-- Divs Style starts here-->
+		
+		
+		
+		
+			  <!-- Divs Style starts here-->
+			<div class="style">
+					
+			<h2>Party Bus</h2>
+			  <img src="images/partybus.jpg" alt="Image of Toyota Avenis"/>
+
+			   <!-- Description box starts here-->
+			 <div class="box">
+			   <div class="title"><a href="../pages/rentcar.html">Booking Now</a>
+				</div>
+				 <div class="meta">Party Bus:</div>
+				   <div class="content">
+					<p>Its angled headlamps and sharply creased bodywork give the RAV4 an assertive presence, but don’t be fooled—under the skin, it’s a practical, comfortable, and easygoing ute. A 176-hp 2.5-liter four and a six-speed automatic are standard with either front- or all-wheel drive. A hybrid, which returned an impressive 31 mpg in our tests, is also available and gets standard all-wheel drive. A 6.1-inch infotainment system is standard on LE, SE, and XLE trims; Limited models get a 7.0-inch unit. </p>
+				   </div>
+				  <div class="bottom"></div>
+				<ul class="toolbar">
+				 <li><a href="../pages/rentcar.html">Booking Now</a></li>
+				</ul>
+			 </div>
+			 
+			<!-- unsorted list starts here-->
+			<ul>
+			<li>3 Days 35/euro per day</li> 
+			 <li>5 Days 30/euro per day </li>
+			<li>7 Days 25/euro per day</li>
+			</ul>
+
+			<!-- Divs tables whit specs starts here-->
+			<div class="Table">	
+			<div class="Title">
+			<p>Specifications</p>
+			</div>
+			<div class="Heading">
+			<div class="Cell">
+				<p>Engine</p>
+			</div>
+			<div class="Cell">
+				<p>Doors</p>
+			</div>
+			<div class="Cell">
+				<p>Transmission</p>
+			</div>
+			</div>
+			<div class="Row">
+			<div class="Cell">
+				<p>2.0 L 3S-FE I4 (gasoline)</p>
+			</div>
+			<div class="Cell">
+				<p>3-door wagon</p>
+			</div>
+			<div class="Cell">
+				<p>5-speed manual</p>
+			</div>
+			</div>
+			<div class="Row">
+			<div class="Cell">
+				<p>2.0 L 3S-FE I5 (gasoline)</p>
+			</div>
+			<div class="Cell">
+				<p>5-door wagon</p>
+			</div>
+			<div class="Cell">
+				<p>4-speed automatic</p>
+			</div>			
+			</div>
+
+			</div>
+			<!-- End of Divs tables-->
+		
+			</div> 
+			<!-- Divs Style starts here-->
+			
+		
+			<!-- Bottom line start here-->
+			<div class="bottomfooter">
+		   <h6>Follow us on Social Media</h6>
+			<a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Image of Toyota RAV4" height="50" width="50"/></a>
+			  <a href="https://twitter.com/"><img src="images/twitter.png" alt="Image of Toyota RAV4" height="50" width="50"/></a>
+			 <a href="https://plus.google.com/"><img src="images/googlep.png" alt="Image of Toyota RAV4" height="50" width="50"/></a>
+			<h6>Contact us at 01-010-000</h6>
+			</div> 
+
+	   
+			<!-- footer start here-->
+			<div id="footer">
+			<p style="text-align:center; color:white;"> Copyright &#169; 2016 Antonio Penna and Grigor Danut All rights reserved.</p>
+			</div>  
+			<!-- End of footer -->
+
+		</div>
+		<!-- End of Wrapper -->
+
+	</body>
 
 </html>
