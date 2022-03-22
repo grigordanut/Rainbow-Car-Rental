@@ -26,6 +26,7 @@
 				$("#dtcollect").datepicker();
 				$("#dtreturn").datepicker();
 			});
+			
 			/*Function insert the collecting date*/
 			function mydatecollect(){
 				//alert("");
@@ -114,29 +115,30 @@
 			
 				/* Checking the Name field here*/
 				if (firstnamevalue==null ||firstnamevalue== ""){		
-				alert("The First Name filed must be filled out");
+					alert("The First Name filed must be filled out");
 				return false
-				}	
+				}
+				
 				/*Checking the Lenght of Name field*/			
 				else if(firstnamevalue.length < 1){			
-				alert("The First Name must have more than 5 Characters");
+					alert("The First Name must have more than 5 Characters");
 				return false
 				}
 										
 				/* Checking the Address Field here*/
 				else if (surenamevalue==null ||surenamevalue== ""){			
-				alert("The Sure Name filed must be filled out");
+					alert("The Sure Name filed must be filled out");
 				return false
 				}
 				
 				/*Checking the Phone field here*/
 				else if (phonevalue==null ||phonevalue== ""){			
-				alert("The Phone filed must be filled out");
+					alert("The Phone filed must be filled out");
 				return false
 				}
 				
 				else if (isNaN(phonevalue)){
-				alert(phonevalue + " is not a number");
+					alert(phonevalue + " is not a number");
 				return false
 				}
 				
@@ -169,8 +171,7 @@
 
 			.toolbar li {
 				float: left;
-				width: 200px;
-								
+				width: 200px;								
 				background-color: #54BAE2;
 				border: 3px solid #FF831C;
 				border-color: #1cfff5 #1cff84 #FF831C; <!-- gives colorfull effect to menu bar -->
@@ -342,7 +343,7 @@
 				<img src="images/rentcar.jpg" alt="Image of the car for rent" height="340px" width="95%"/>
 			</div>
 			
-				  <!-- Bottom line start here-->
+			<!-- Bottom line start here-->
 			<div class="bottomfooter">
 				<h6>Follow us on Social Media</h6>
 					<a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Image of Toyota RAV4" height="50" width="50"/></a>
@@ -351,7 +352,7 @@
 				<h6>Contact us at 01-010-000</h6>
 			</div> 
 
-				<!-- footer start here-->
+			<!-- footer start here-->
 			<div id="footer">
 				<p style="text-align:center; color:white;"> Copyright &#169; 2016 Antonio Penna and Grigor Danut All rights reserved.</p>
 			</div>  

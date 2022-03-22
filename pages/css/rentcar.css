@@ -47,6 +47,7 @@ h6 {
     color: #4682b4;
     text-align: center;	
 }
+
 /* Paragraph Proprieties*/
 p{
 	font-size:16px;
@@ -341,6 +342,7 @@ p{
 	padding-left:20px;
 	font-size:20px;
 }
+
 /* buttons proprieties */
 .button{
 	height:40px;
@@ -370,7 +372,6 @@ p{
 }
 /* End of Footer */
 
-
 /* for 480px or less */
 @media screen and (max-width: 480px) 
 {
@@ -386,4 +387,3 @@ display: none;
 #surenamebox{
 	size:20px;
 }
-

@@ -25,6 +25,7 @@
 			$( function() {
 				$("#dtcollect").datepicker();			
 			});
+			
 			<!--Function insert collecting time-->
 			$(function () {
 				$("#ntcollect").timepicker({
@@ -92,6 +93,7 @@
 					alert("The First Name filed must be filled out");
 				return false
 				}	
+				
 				/*Checking the Lenght of Name field*/			
 				else if(firstnamevalue.length < 1){			
 					alert("The First Name must have more than 5 Characters");

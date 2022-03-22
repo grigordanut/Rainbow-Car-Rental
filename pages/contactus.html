@@ -2,10 +2,12 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 	<head>
 
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 		<title>Contact Us</title>
 	  
 		<link rel="stylesheet" type="text/css" href="css/contactus.css"/> 
@@ -21,38 +23,39 @@
 			
 				/* Checking the Name field here*/
 				if (firstnamevalue==null ||firstnamevalue== ""){		
-				alert("The First Name filed must be filled out");
+					alert("The First Name filed must be filled out");
 				return false
 				}	
+				
 				/*Checking the Lenght of Name field*/			
 				else if(firstnamevalue.length < 3){			
-				alert("The First Name must have more than 5 Characters");
+					alert("The First Name must have more than 5 Characters");
 				return false
 				}
 										
 				/* Checking the Address Field here*/
 				else if (surenamevalue==null ||surenamevalue== ""){			
-				alert("The Sure Name filed must be filled out");
+					alert("The Sure Name filed must be filled out");
 				return false
 				}
 				
 				/*Checking the Phone field here*/
 				else if (phonenumbervalue==null ||phonenumbervalue== ""){			
-				alert("The Phone filed must be filled out");
+					alert("The Phone filed must be filled out");
 				return false
 				}
 				
 				else if (isNaN(phonenumbervalue)){
-				alert(phonenumbervalue + " is not a number");
+					alert(phonenumbervalue + " is not a number");
 				return false
 				}
 				
 				else{
 				   alert("Filed has value");
 				
-				}
-			
+				}			
 			}
+			
 		</script>
 		
 		<!--Adding style menu-->	   
@@ -78,7 +81,6 @@
 			.toolbar li {
 				float: left;
 				width:200px;
-
 				background-color:#54BAE2;
 				border:3px solid #FF831C;
 				border-color: #1cfff5 #1cff84 #FF831C; <!-- gives colorfull effect to menu bar -->
@@ -138,6 +140,7 @@
 						<div id="surenamebox">			
 							<input class="snamebox" name = "surename" type = "text" size="25" required />
 						</div>
+						
 						<!-- Content phone number -->
 						<div id="phonenumber">
 							<p>Phone Number</p>
