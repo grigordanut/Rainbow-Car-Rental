@@ -19,11 +19,19 @@
 
 /* header proprieties */
 #header { 
-    height:210px;
-	background-color:#93e1ed;
-    margin:5px;
+    height:290px;
+	background-color:#F8F8F8;
+    margin:0 auto;
     padding:5px;
 	border-radius:10px;
+}
+
+#header-title{
+	height:80px;
+	width:100%;
+	float:left;
+	background-color:#93e1ed; 			   
+	border-radius:5px;
 }
 
 h1{
