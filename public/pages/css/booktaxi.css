@@ -9,8 +9,7 @@
 /* wrapper proprieties */
 #wrapper{
 	margin:0 auto;
-    max-width:1400px;
-    width:95%;
+    width:98%;
     background:#fff;
     border:1px solid #d5d5d5;
     border-radius:12px;
@@ -19,7 +18,7 @@
 
 /* header proprieties */
 #header { 
-    height:290px;
+    height:195px;
 	background-color:#F8F8F8;
     margin:0 auto;
     padding:5px;
@@ -34,14 +33,6 @@
 	border-radius:5px;
 }
 
-#title{
-	height:725px;
-	width:100%;
-	float:left;
-	background-color:white;	
-	border-radius:5px;
-}
-
 /* h1 Proprieties*/
 h1{
 	text-align:center;
@@ -52,8 +43,7 @@ h6 {
 	font-family:georgia;
 	font-size:16px;
     color:#4682b4;
-    text-align:center;
-	
+    text-align:center;	
 }
 
 /* Paragraph Proprieties*/
@@ -63,17 +53,10 @@ p{
 	font-weight:bold
 }
 
-#booktaxi{
-	height:80px;
-	width:65%;
-	float:left;	
-	background-color:#26d9d9;
-	border-radius:10px;
-}
-
 #date{
-	height:60px;
-	width:35%;
+	height:50px;
+	margin-top:17px;
+	width:25%;
 	float:right;
 	background-color:blue;
 	text-align:center;
@@ -84,25 +67,29 @@ p{
 }
 
 /* Rightsidebar proprieties */
-#rightsidebar{
-	height:700px;
+#picturetaximenu{
+	height:770px;
 	width:45.5%;
 	float:right;
 	background-color:#93e1ed;
-	margin-top:5px;
+	
 	margin-right:10px;	
 	padding-left:10px;
+	margin-bottom:15px;
+	border-radius:5px;
 }
 
 /* The maincontent proprieties */ 
-#contentmenu{
-	height:700px;
+#booktaximenu{
+	height:770px;
 	width:51%;
 	margin-left:10px;
 	float:left;
 	background-color:#ff33ff;	
-	margin-top:5px;
+	
 	padding-left:5px;
+	margin-bottom:15px;
+	border-radius:5px;
 }
 
 #firstname{
@@ -111,7 +98,7 @@ p{
 	float:left;
 	background-color:#e1e1d0;
 	border:1px solid #33cc00;	
-	margin-top:15px;
+	margin-top:5px;
 	margin-left:20px;
 }
 
@@ -121,7 +108,7 @@ p{
 	float:left;
 	background-color:#e1e1d0;
 	border:1px solid #33cc00;
-	margin-top:15px;	
+	margin-top:5px;	
 	padding-top:15px;	
     padding-left:20px;	
 }
@@ -330,7 +317,7 @@ p{
 }
 
 #submit{
-	height:60px;
+	height:50px;
 	width:30.5%;
 	float:left;
 	background-color:#ff33ff;
@@ -363,8 +350,9 @@ p{
     color:white;
     clear:both;
     text-align:center;
-	margin-top:10px;
     padding:10px;
+	margin-left:5px;
+	margin-right:5px;
 }
 
 /* Adding the Footer */
@@ -376,5 +364,8 @@ p{
     padding:5px;
 	margin-top:10px;
 	border-radius:5px;	
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:5px;
 }
 /* End of Footer */
