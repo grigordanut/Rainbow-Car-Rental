@@ -18,7 +18,7 @@
 
 /* header proprieties */
 #header { 
-    height:195px;
+    height:220px;
 	background-color:#F8F8F8;
     margin:0 auto;
     padding:5px;
@@ -55,7 +55,7 @@ p{
 
 #date{
 	height:50px;
-	margin-top:17px;
+	margin-top:37px;
 	width:25%;
 	float:right;
 	background-color:blue;
