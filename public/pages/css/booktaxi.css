@@ -55,14 +55,14 @@ p{
 
 #date{
 	height:50px;
-	margin-top:37px;
+	margin-top:40px;
 	width:25%;
 	float:right;
 	background-color:blue;
 	text-align:center;
 	font-size:30px;
 	color:yellow;
-	padding-top:20px;
+	padding-top:15px;
 	border-radius:10px;
 }
 
