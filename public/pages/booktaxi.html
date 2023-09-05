@@ -147,7 +147,7 @@
 
 			.toolbar li {
 				float: left;
-				width: 200px;	
+				width: 190px;	
 				background-color: #54BAE2;
 				border: 3px solid #FF831C;
 				border-color: #1cfff5 #1cff84 #FF831C; <!-- gives colorfull effect to menu bar -->
@@ -161,9 +161,10 @@
 				padding-right: 1.5em; 
 				padding-top: 1.0em;
 				padding-bottom: 1.0em;
-				color: #fff;
+				color: #ffffff;
 				font-weight: bold;
-				text-decoration: none; 				
+				text-decoration: none; 	
+				text-align: center;				
 			}
 
 			.toolbar li a:hover { 
@@ -195,9 +196,13 @@
 			.daddressbox:hover {
 				background-color:white;
 			}
-			.button:hover {
+			.button_submit:hover {
 				color:blue; 
-				background-color:green;
+				background-color:#00cc00;
+			}
+			.button_cancel:hover {
+				color:blue; 
+				background-color:red;
 			}
 			
 		</style>
@@ -328,17 +333,17 @@
 					</div>
 						
 					<div id="submit">			        		
-						<button class="button" type="submit" value="Submit">Submit</button>
+						<button class="button_submit" type="submit" value="Submit">Submit</button>
 					</div>
+					
 					<div id="cancel">				        		
-						<button class="button" type="submit" value="Submit">Cancel</button>
+						<button class="button_cancel" type="submit" value="Submit">Cancel</button>
 					</div>
 				</form>
 			</div>	
 				
 			<!--Right sidebar section-->
-			<div id="picturetaximenu">
-				
+			<div id="picturetaximenu">				
 				<img src="images/americantaxi.jpg" alt="Image of a taxi car" height="370px" width="98%"/>							
 				<img src="images/newyorktaxi.jpg" alt="Image of a taxi car" height="370px" width="98%"/>
 			</div>

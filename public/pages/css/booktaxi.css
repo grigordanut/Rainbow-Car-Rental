@@ -56,7 +56,8 @@ p{
 #date{
 	height:50px;
 	margin-top:40px;
-	width:25%;
+	margin-right:40px;
+	width:22%;
 	float:right;
 	background-color:blue;
 	text-align:center;
@@ -314,32 +315,39 @@ p{
 }
 
 #submit{
-	height:50px;
-	width:30.5%;
+	height:60px;
+	width:40%;
 	float:left;
 	background-color:#ff33ff;
-	margin-left:20px;
-	padding-top:25px;
-	padding-left:60px;	
+	margin-left:90px;
+	padding-top:25px;		
 }
 	
 #cancel{
 	height:60px;
-	width:34.5%;
+	width:40%;
 	float:left;
 	background-color:#ff33ff;
 	padding-top:25px;
-	padding-left:120px
 }
 
-/*Button proprities*/
-.button{
+/*Button properties*/
+.button_submit{
 	height:45px;
 	width:150px;
 	font-size:20px;
 	font-weight:bold;
 	border-radius:10px;
-	background-color:#00cc00;
+	background-color:#CFD8DC;
+}
+
+.button_cancel{
+	height:45px;
+	width:150px;
+	font-size:20px;
+	font-weight:bold;
+	border-radius:10px;
+	background-color:#CFD8DC;
 }
 
 #bottomfooter {
