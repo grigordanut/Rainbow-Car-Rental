@@ -64,7 +64,7 @@ p{
 }
 
 #contactmenu{
-	height:585px;
+	height:580px;
 	width:50%;
 	float:left;
 	background-color:#d9b3ff;
@@ -206,12 +206,14 @@ p{
 	font-size:25px;
 }
 
-.bottomfooter {
+#bottomfooter {
     background-color:#54BAE2;
     color:white;
     clear:both;
     text-align:center;
-    padding:30px;
+	padding:30px;
+	margin-left:5px;
+	margin-right:5px;   
 }
 
 /* Adding the Footer */
@@ -223,7 +225,9 @@ p{
     padding:5px;
 	margin-top:10px;
 	border-radius:5px;
-	
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:5px;
 }
 /* End of Footer */
 
